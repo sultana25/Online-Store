@@ -22,7 +22,7 @@ require_once("cart.php");
 
     <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
         <input type="hidden" name="cmd" value="_cart">
-        <input type="hidden" name="business" value="ssazeda@gmail.com">
+        <input type="hidden" name="business" value="ssultana@gmail.com">
         <input type="hidden" name="currency_code" value="USD">
         <table class="table table-striped">
         <thead>
@@ -38,9 +38,7 @@ require_once("cart.php");
         <?php cart(); ?>
         </tbody>
     </table>
-        <input type="image" name="upload"
-               src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"
-               alt="PayPal - The safer, easier way to pay online">
+        <?php echo  show_paypal();?>
 </form>
 
 
